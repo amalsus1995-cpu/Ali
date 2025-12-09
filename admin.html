@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>لوحة الإدارة</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="app">
+        <div class="card">
+
+            <h1 class="title">لوحة الإدارة</h1>
+            <p class="subtitle">تحكّم كامل في عمليات الشحن والسحب</p>
+
+            <div id="alert" class="alert"></div>
+
+            <!-- كلمة المرور -->
+            <div id="adminLogin">
+                <div class="form-group">
+                    <label>كلمة مرور المدير</label>
+                    <input type="password" id="admin_pass">
+                </div>
+
+                <button class="btn btn-primary" onclick="adminLogin()">
+                    دخول الإدارة
+                </button>
+            </div>
+
+            <!-- لوحة التحكم الفعلية -->
+            <div id="adminPanel" style="display:none;">
+
+                <h2 class="subtitle" style="margin-top:20px;">طلبات الشحن</h2>
+                <div id="depositList" class="list"></div>
+
+                <h2 class="subtitle" style="margin-top:20px;">طلبات السحب</h2>
+                <div id="withdrawList" class="list"></div>
+
+                <button class="btn btn-outline" onclick="logoutAdmin()">
+                    تسجيل خروج
+                </button>
+
+            </div>
+
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
