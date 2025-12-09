@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>لوحة التحكم</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="app">
+        <div class="card">
+
+            <h1 class="title">لوحة التحكم</h1>
+            <p class="subtitle">مرحبا بك في حسابك</p>
+
+            <div id="alert" class="alert"></div>
+
+            <div class="row">
+                <div class="stat">
+                    <div class="stat-label">الرصيد</div>
+                    <div id="balance" class="stat-value">0$</div>
+                </div>
+
+                <div class="stat">
+                    <div class="stat-label">إجمالي الشحن</div>
+                    <div id="total_deposit" class="stat-value">0$</div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="stat">
+                    <div class="stat-label">الإعلانات المتاحة اليوم</div>
+                    <div id="ads_today" class="stat-value">0</div>
+                </div>
+
+                <div class="stat">
+                    <div class="stat-label">عدد مشاهدات اليوم</div>
+                    <div id="watched" class="stat-value">0</div>
+                </div>
+            </div>
+
+            <button class="btn btn-primary" onclick="goAds()">مشاهدة الإعلانات</button>
+            <button class="btn btn-outline" onclick="goDeposit()">شحن رصيد</button>
+            <button class="btn btn-outline" onclick="goWithdraw()">سحب رصيد</button>
+
+            <p class="small" style="margin-top: 20px; text-align: center;">
+                <a href="index.html" style="color:#facc15;">تسجيل الخروج</a>
+            </p>
+
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
