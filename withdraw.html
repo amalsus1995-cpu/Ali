@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>سحب الرصيد</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="app">
+        <div class="card">
+
+            <h1 class="title">سحب الرصيد</h1>
+            <p class="subtitle">قم بطلب سحب أرباحك</p>
+
+            <div id="alert" class="alert"></div>
+
+            <div class="form-group">
+                <label>المبلغ المراد سحبه (USDT)</label>
+                <input type="number" id="withdraw_amount">
+            </div>
+
+            <div class="form-group">
+                <label>عنوان محفظتك (USDT TRC20)</label>
+                <input type="text" id="withdraw_wallet">
+            </div>
+
+            <button class="btn btn-primary" onclick="sendWithdraw()">
+                إرسال طلب السحب
+            </button>
+
+            <button class="btn btn-outline" onclick="goDashboard()">
+                رجوع للوحة التحكم
+            </button>
+
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
