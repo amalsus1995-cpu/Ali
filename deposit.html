@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>شحن الرصيد</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="app">
+        <div class="card">
+
+            <h1 class="title">شحن الرصيد</h1>
+            <p class="subtitle">اختر المبلغ وقم بالتحويل إلى عنوان المحفظة</p>
+
+            <div id="alert" class="alert"></div>
+
+            <div class="form-group">
+                <label>اختر مبلغ الشحن</label>
+                <select id="amount">
+                    <option value="20">20 USDT</option>
+                    <option value="50">50 USDT</option>
+                    <option value="100">100 USDT</option>
+                    <option value="200">200 USDT</option>
+                    <option value="300">300 USDT</option>
+                    <option value="500">500 USDT</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label>عنوان محفظة USDT (TRC20)</label>
+                <input type="text" disabled value="TPNoGerv1EMBSdrs9Yca93eCQUVsoNiRvq">
+            </div>
+
+            <div class="form-group">
+                <label>أدخل رقم المعاملة (TXID)</label>
+                <input type="text" id="txid">
+            </div>
+
+            <button class="btn btn-primary" onclick="sendDeposit()">إرسال طلب الشحن</button>
+
+            <button class="btn btn-outline" onclick="goDashboard()">رجوع للوحة التحكم</button>
+
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
